@@ -3,4 +3,49 @@ git push -u origin nombre_rama
 
 
 Conceptos:
-React
+React: Es una biblioteca de JavaScript de código abierto OpenSorc 
+Componente: es una parte de la interfaz de usuario que es independiente y reusable. 
+Se clasifican en funcionales y de clase.
+Componente funcional: una función de Javascript/ES6 que retornea un elemento de react(JSX).
+Props = propiedades: son argumentos que puede recibir una argumento de react, solo pueden ser enviados de padre a hijo. 
+Componente de clase: Clase de ES6(JavaScript moderno) que retorna un elemento JSX
+Estado state: representación en JavaScript del conjunto de propiedades de un componente y sus valores actuales.
+Hooks: función especial que te permite trabajar con estados en componentes funcionales y otros aspectos de React
+Event Listener: función en JavaScript que es ejecutada cuando ocurre un evento específico. 
+
+JSX:
+Es una extensión de react para la sintaxis de javasScript, nos permite describir en JavaScript cómo se verán los componentes usando una estructura similar a HTML.
+Sus ventajas son: Estructura más fácil de visualizar, Errores y advertencias más útiles. (Recordar que JSX es opcional).
+Ejemplo:
+const elemento = <h1> Mensaje </h1>;
+
+Elementos de JSX:
+Un elemento son unidades más pequeñas en react y definen lo que se va a ver en la pantalla.
+
+ReactDom Dom(Document Object Model): Es un paquete que facilita la interacción y actualización del DOM en aplicaciones React.
+
+Dom: Representación en el navegador de todos los elementos que conforman una página o aplicación web. 
+
+En JSX, los elementos HTML se representan con etiquetas en letras minúsculas, mientras que los componentes definidos por el usuario comienzan con una letra mayúscula.
+
+Recordar cameCase.
+Ejemplo:
+
+background-image -> CSS
+backgroundsImage -> JSX
+
+Estructura de un componente:
+Al igual que HTML, los elemntos pueden ser anidados en JSX para formar estructuras más complejas.
+
+Renderizar Componentes:
+en HTML <div id="root"></div>
+
+Para usar ReactDOM debemos importarlo de la siguiente manera:
+import ReactDOM form 'react-dom';
+
+Self-Closing Tag:
+Es un elemento que solo posee una etiqueta de apertura ya que no contiene texto u otros elementos. Ejemplo(en html la etiqueta <br> o <img/>).
+
+Comando para crear la aplicación incial de react es:
+npx create-react-app mi-app
+npm start -> iniciar la aplicación
