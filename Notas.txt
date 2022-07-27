@@ -1,2 +1,6 @@
+Subir a remoto:
+git push -u origin nombre_rama
+
+
 Conceptos:
 React
