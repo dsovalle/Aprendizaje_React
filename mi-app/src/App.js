@@ -10,6 +10,7 @@ function App() {
           nombre='Pepito Perez'
           pais='EstadosUnidos'
           imagen='logo-coca'
+          alt='Coca-Cola'
           cargo='Asesor'
           empresa='CocaCola Company'
           testimonio='Coca-Cola es una bebida azucarada gaseosa vendida a nivel mundial en tiendas, restaurantes y máquinas expendedoras en más de doscientos países o territorios. Es el principal producto de The Coca-Cola Company, de origen estadounidense.' />
@@ -18,6 +19,7 @@ function App() {
           nombre='Carlos Perez'
           pais='EstadosUnidos'
           imagen='Pepsi'
+          alt='Pepsi'
           cargo='Ingeniero de Software'
           empresa='Pepsi'
           testimonio='Pepsi, es una bebida azucarada y gaseosa de cola creada en los Estados Unidos y producida por la compañía PepsiCo. Su mayor competidora es la también estadounidense Coca-Cola' />
@@ -26,6 +28,7 @@ function App() {
           nombre='Daniel T'
           pais='Colombia'
           imagen='Alpina'
+          alt='Alpina'
           cargo='Ingeniero de Sistemas'
           empresa='Alpina'
           testimonio='Fundada en el año 2008, tiene el propósito de contribuir a mejorar la Seguridad Alimentaria y Nutricional de las poblaciones, en especial de la primera infancia, generando y transfiriendo conocimiento.'/>
