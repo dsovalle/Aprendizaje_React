@@ -49,3 +49,11 @@ Es un elemento que solo posee una etiqueta de apertura ya que no contiene texto 
 Comando para crear la aplicación incial de react es:
 npx create-react-app mi-app
 npm start -> iniciar la aplicación
+
+Recordar el importar y exportar para poder hacer que salgo lo que hemos puesto en nuestro navegador.
+
+Recordar que los Props nos ayudan a no repetir el código cunaod se necesita un componente igual a otro. es decir cambios un elemento fijo.
+
+Recomendación dat un espacio al final de un componente que no tiene cierre ejemplo:
+
+<img className='imagen-testimonio' src={require(`../imagenes/${props.imagen}.png`)} alt='Foto de CocaCola' />
