@@ -1,6 +1,17 @@
 Subir a remoto:
 git push -u origin nombre_rama
 
+git fetch + git merge = git pull
+
+git fakeTeamwork -> simular commits
+
+Dos hook fundamentales:
+useState: Nos permite almacenar el estado de un componente.
+use Effect: nos permite crear un puente entre React y el navegador (Nos ayuda a traer datos a react).
+
+use Effect y arrgelo de dependencias.
+
+Cargar componentes con rafce.
 
 Conceptos:
 React: Es una biblioteca de JavaScript de código abierto OpenSorc 
