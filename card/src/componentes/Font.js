@@ -21,6 +21,7 @@ export default function Font() {
                     </div>
                     <button className='font-medium text-base text-violet-500'>Olvidé mi contraseña</button>
                 </div>
+                
                 <div className='mt-8 flex-col gap-y-4'>
                 <button className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-blue-600 rounded-xl text-white font-bold text-lg w-full'>Inicia sesión</button>
                     <button 

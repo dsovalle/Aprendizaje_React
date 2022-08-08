@@ -1,5 +1,5 @@
 Subir a remoto:
-git push -u origin nombre_rama
+git push -u origin nombre_rama (margin)
 
 git fetch + git merge = git pull
 
