@@ -6,7 +6,7 @@ import Boton from '../botones/boton'
 import BotonClose from "../botones/botonclose";
 import Close from '../../assets/close.svg';
 import Google from '../../assets/google.svg';
-
+import { Link } from "react-router-dom";
 
 function Modal() {
   const [showModal, setShowModal] = React.useState(false);
@@ -25,7 +25,7 @@ function Modal() {
               
                   <div className=' bg-white  rounded-3xl border-4 border-main-blue' >
 
-                    <BotonClose text='' close={Close} alt='Close icon' onclick={() => setShowModal(false)} />
+                  <Link to='/Home'><BotonClose text='' close={Close} alt='Close icon' onclick={() => setShowModal(false)} /></Link>
 
                     <div className=' px-10 py-3' >
                       <br />

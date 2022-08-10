@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Expenses from "./components/Modal/modalFormRegistro";
-
+import Formulario from "./components/Modal/modalFormRegistro";
+import Login from "./components/Modal/modalLogin";
 
 import {
   BrowserRouter,
@@ -17,8 +17,9 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="Registro" element={<Expenses />} />
+      <Route path="Registro" element={<Formulario />} />
       <Route path="Home" element={<App />} />
+      <Route path="Login" element={<Login />} />
     </Routes>
   </BrowserRouter>
 );

@@ -26,7 +26,7 @@ function Modal() {
 
             <div className=' bg-white  rounded-3xl border-4 border-main-blue' >
 
-              <BotonClose text='' close={Close} alt='Close icon' onclick={() => setShowModal(true)} />
+              <BotonClose text='' close={Close} alt='Close icon' onclick={() => setShowModal(false)} />
 
               <div className=' px-10 py-14' >
 
@@ -41,7 +41,7 @@ function Modal() {
                 <br />
 
                 <div className="font-bold text-xl">
-                  <Label text='¿Ya tienes cuenta? Iniciar sesión ' tipo={false} />
+                  <Link to='/Login' ><Label text='¿Ya tienes cuenta? Iniciar sesión' tipo={false} /></Link>
                 </div>
               </div>
             </div>
