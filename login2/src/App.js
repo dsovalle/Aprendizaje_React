@@ -1,10 +1,13 @@
 import './App.css';
-import Modal from './components/Modal/modal'
+import ModalLogin from './components/Modal/modalLogin'
+import ModalRegistro from './components/Modal/modalRegistro'
 
 function App() {
   return (
     <div className="App">
-        <Modal/>
+        <ModalLogin />
+        <br />
+        <ModalRegistro />
     </div>
   );
 }

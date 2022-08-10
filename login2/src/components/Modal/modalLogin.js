@@ -7,6 +7,7 @@ import BotonClose from "../botones/botonclose";
 import Close from '../../assets/close.svg';
 import Google from '../../assets/google.svg';
 
+
 function Modal() {
   const [showModal, setShowModal] = React.useState(false);
   return (
@@ -20,18 +21,15 @@ function Modal() {
       </button>
       {showModal ? (
         <>
-          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none backdrop-blur-sm">
-            {/*body*/}
-
-              <div class="flex flex-col justify-center items-center  ">
-                <div className='flex w-full h-screen items-center justify-center  '>
+          <div className="justify-center items-center w-full h-screen flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none backdrop-blur-sm">
+              
                   <div className=' bg-white  rounded-3xl border-4 border-main-blue' >
 
                     <BotonClose text='' close={Close} alt='Close icon' onclick={() => setShowModal(false)} />
 
                     <div className=' px-10 py-3' >
                       <br />
-                      <Title text='Iniciar Sesión' className='text-lg font-medium' />
+                      <Title text='Iniciar Sesión' className='text-lg font-medium' titulo={true} />
                       <br />
                       <Label text='Usuario' tipo={true} />
                       <Input text='Ingrese su correo electrónico' />
@@ -52,10 +50,8 @@ function Modal() {
                       <Boton tipoBoton={false} google={Google} alt='Google icon' text='Continuar con Google' />
                     </div>
                   </div>
-                </div>
-              </div>
-              {/*footer*/}
             </div>
+
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
