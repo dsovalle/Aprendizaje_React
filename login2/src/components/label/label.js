@@ -1,9 +1,9 @@
 import React from "react";
 
-const Label = ({ text, tipo }) => {
+const Label = ({ text, className }) => {
     return(
         <div>
-            <label className={ tipo? 'normal text-lg font-bold ' : 'tachado text-decoration-line: underline cursor-pointer'}>{text}</label>
+            <label className={className}>{text}</label>
         </div>
     )
 }

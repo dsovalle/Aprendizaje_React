@@ -26,22 +26,22 @@ function Modal() {
 
             <div className=' bg-white  rounded-3xl border-4 border-main-blue' >
 
-              <BotonClose text='' close={Close} alt='Close icon' onclick={() => setShowModal(false)} />
+              <BotonClose close={Close} alt='Close icon' className='float-right' onclick={() => setShowModal(false)} />
 
               <div className=' px-10 py-14' >
 
 
-                <Title text='¡Te damos la más ' titulo={true}/>
-                <Title text='cordial bienvenida!' titulo={true}/>
+                <Title text='¡Te damos la más ' className='text-4xl font-bold text-main-blue tracking-tighter grid place-items-center'/>
+                <Title text='cordial bienvenida!' className='text-4xl font-bold text-main-blue tracking-tighter grid place-items-center'/>
                 <br />
 
-                <Link to='/Registro'><Boton tipoBoton={true} text='Registrate con tu email' onclick={() => setShowModal(true)} /></Link>
+                <Link to='/Registro'><Boton className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform py-2  rounded-full text-white font-semibold text-lg   w-full bg-main-blue m-2' text='Registrate con tu email' onclick={() => setShowModal(true)} /></Link>
 
-                <Boton tipoBoton={false} text='Continuar con Google' google={Google} alt='Google icon' />
+                <Boton className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-2  rounded-full text-black font-semibold text-lg  border-white w-full bg-main-gray m-2' text='Continuar con Google' google={Google} alt='Google icon' />
                 <br />
 
                 <div className="font-bold text-xl">
-                  <Link to='/Login' ><Label text='¿Ya tienes cuenta? Iniciar sesión' tipo={false} /></Link>
+                  <Link to='/Login' ><Label text='¿Ya tienes cuenta? Iniciar sesión' className='text-decoration-line: underline cursor-pointer' /></Link>
                 </div>
               </div>
             </div>

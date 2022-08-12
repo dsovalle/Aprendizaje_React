@@ -25,29 +25,29 @@ function Modal() {
               
                   <div className=' bg-white  rounded-3xl border-4 border-main-blue' >
 
-                  <Link to='/Home'><BotonClose text='' close={Close} alt='Close icon' onclick={() => setShowModal(false)} /></Link>
+                  <Link to='/Home'><BotonClose close={Close} alt='Close icon' className='float-right' onclick={() => setShowModal(false)} /></Link>
 
                     <div className=' px-10 py-3' >
                       <br />
-                      <Title text='Iniciar Sesión' className='text-lg font-medium' titulo={true} />
+                      <Title text='Iniciar Sesión' className='text-4xl font-bold text-main-blue tracking-tighter grid place-items-center' />
                       <br />
-                      <Label text='Usuario' tipo={true} />
-                      <Input text='Ingrese su correo electrónico' />
+                      <Label text='Usuario' className='text-lg font-bold' />
+                      <Input text='Ingrese su correo electrónico' className='w-full border border-black rounded-xl p-2 bg-transparent' />
 
                       <br />
-                      <Label text='Contraseña' tipo={true} />
-                      <Input text='Ingrese su contraseña' types='password' />
+                      <Label text='Contraseña' className='text-lg font-bold' />
+                      <Input text='Ingrese su contraseña' types='password' className='w-full border border-black rounded-xl p-2 bg-transparent' />
 
-                      <Label text='Recupera tu contraseña' tipo={false} />
+                      <Label text='Recupera tu contraseña' className='text-decoration-line: underline cursor-pointer' />
                       <br />
 
-                      <Boton tipoBoton={true} text='Iniciar sesión' />
+                      <Boton className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform py-2  rounded-full text-white font-semibold text-lg   w-full bg-main-blue m-2' text='Iniciar sesión' />
 
                       <div className="grid place-items-center ">
-                        <Label tipo='true' text='O' />
+                        <Label className='text-lg font-bold' text='O' />
                       </div>
 
-                      <Boton tipoBoton={false} google={Google} alt='Google icon' text='Continuar con Google' />
+                      <Boton className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-2  rounded-full text-black font-semibold text-lg  border-white w-full bg-main-gray m-2' google={Google} alt='Google icon' text='Continuar con Google' />
                     </div>
                   </div>
             </div>

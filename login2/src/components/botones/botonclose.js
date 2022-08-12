@@ -1,6 +1,6 @@
 import React from "react";
 
-const botonClose = ({ close, alt, onclick }) => {
+const botonClose = ({ className,close, alt, onclick }) => {
   return (
     <div>
       <button className='float-right'>
